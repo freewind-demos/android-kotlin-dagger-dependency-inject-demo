@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
+    // Note: Following must after the above one
     kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -20,5 +22,5 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.10")
     implementation("androidx.appcompat:appcompat:1.4.0")
     implementation("com.android.support.constraint:constraint-layout:2.0.4")
-    annotationProcessor("com.google.dagger:dagger-compiler:2.40.5")
+    kapt("com.google.dagger:dagger-compiler:2.40.5")
 }

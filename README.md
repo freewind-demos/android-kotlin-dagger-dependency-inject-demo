@@ -1,10 +1,10 @@
-Android Kotlin Hello World Project
+Android Kotlin Dagger Dependency Inject Project
 ===========================
 
-Run this demo from your IDE.
+在Android应用中使用dagger进行dependency inject
 
 ```
-./gradlew installDebug
+./gradlew clean build
 ```
 
-不能成功部署，需要研究。
+然后在Android Studio中运行`MainActivity`

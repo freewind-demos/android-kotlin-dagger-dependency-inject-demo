@@ -5,15 +5,13 @@ import javax.inject.Inject
 
 @Component
 interface CoreComponent {
-    fun inject(core: Core);
+    fun inject(activity: MainActivity);
 }
 
-class Core {
+class Core @Inject constructor() {
     @Inject
     lateinit var util: Util
-    fun hello(name: String) {
-        println("Hello, ${util.toUpper(name)}!")
-    }
+    fun hello(name: String) = "Hello, ${util.toUpper(name)}!"
 }
 
 class Util @Inject constructor() {

@@ -1,4 +1,4 @@
-package demos
+package demos.android.kotlin.dagger.dependency.inject.demo
 
 import dagger.Component
 import javax.inject.Inject
